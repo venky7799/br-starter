@@ -54,6 +54,7 @@ html {
   min-width: 960px;
   margin: 0 auto;
   height: 100%;
+ 
   @include media("<=1560px") {
     width: 1280px;
     min-width: 1280px;

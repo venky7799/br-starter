@@ -1,8 +1,19 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import * as Sentry from "@sentry/react";
+import { Integrations } from "@sentry/tracing";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import {BrowserRouter as Router} from "react-router-dom";
+Sentry.init({
+    dsn: "https://3999330de7bf49e7b986d296d1179104@o985932.ingest.sentry.io/5942385",
+    integrations: [new Integrations.BrowserTracing()],
+  
+    // Set tracesSampleRate to 1.0 to capture 100%
+    // of transactions for performance monitoring.
+    // We recommend adjusting this value in production
+    tracesSampleRate: 1.0,
+  });
 ReactDOM.render(<Router><App /></Router>, document.getElementById("root"));
 
 // If you want your app to work offline and load faster, you can change

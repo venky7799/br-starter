@@ -32,6 +32,7 @@ const Header=({history, dimensions})=>{
       //
       history.listen(()=>{
           setMenuState({menuOpened: false});
+          
       })
 
       //if menu is opened
@@ -146,21 +147,19 @@ const Header=({history, dimensions})=>{
            <div className="container">
                <div className="v-center row space-between">
                    <div className="logo">
-                     <NavLink to="/">Bricksroot</NavLink>
-                       
+                     <NavLink to="/">Bricksroot</NavLink> 
                    </div>
                    <div className="nav-toggle">
-                        <div onClick={()=>setMenuState({menuOpened:true})} className="hamburger-menu">
+                        <div onClick={()=>{setMenuState({menuOpened:true});
+                      throw new Error("vek")}} className="hamburger-menu">
                             <span></span>
                             <span></span>
                             <span></span>
-
                         </div>
                         <div onClick={()=>setMenuState({menuOpened:false})} className="hamburger-close">
                             <UparrowCircle/>
                         </div>
                     </div>
-                  
                </div>
            </div>
        </div>

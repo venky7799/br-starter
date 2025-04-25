@@ -142,9 +142,6 @@ const Wallpaper=()=>{
 
         const tt1= gsap.timeline();
         
-        
-
-        
         ScrollTrigger.create({
             trigger: '.creativity2',
             start:"-60px 50%", 
@@ -571,7 +568,7 @@ const Wallpaper=()=>{
             
             <section className="projects projects1">
                 <div className="container_project">
-                    <div className="row v-center space-between">
+                    <div className="row v-center o-center">
                         <div className="project">
                             <div className="project-heading">
                                 <div><span role="img" aria-label="sheep">🎊</span> Our Projects</div>
@@ -596,8 +593,8 @@ const Wallpaper=()=>{
 
             
             <section className="projects2">
-                <div className="container_project">
-                    <div className="row v-center space-between">
+                <div className="container_project ">
+                    <div className="row v-center o-center">
                         <div className="project">
                             <div className="projectimages">
                                 <div className="imagee"> 
