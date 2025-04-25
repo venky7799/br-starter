@@ -1,2 +1,0 @@
-(this.webpackJsonpcode=this.webpackJsonpcode||[]).push([[5],{76:function(c,e,s){"use strict";s.r(e);s(2);var n=s(0);e.default=function(){return Object(n.jsx)("div",{className:"page",children:Object(n.jsx)("div",{className:"container",children:Object(n.jsx)("div",{className:"row",children:Object(n.jsx)("h3",{children:"Under construction"})})})})}}}]);
-//# sourceMappingURL=5.503f790e.chunk.js.map
