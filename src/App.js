@@ -1,5 +1,5 @@
 import React,{useEffect, useRef, useState, Suspense} from "react";
-import {Route,useLocation} from "react-router-dom";
+import {Route} from "react-router-dom";
 import "./styles/App.scss";
 import Header from "./component/header";
 import Navigation from "./component/navigation";
