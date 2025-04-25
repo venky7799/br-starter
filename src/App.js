@@ -95,7 +95,7 @@ var location=useLocation();
   // Run scrollrender once page is loaded.
   useEffect(() => {
     requestAnimationFrame(() => skewScrolling());
-  },[]);
+  });
 
   setTimeout(() => {
     setBodyHeight();
