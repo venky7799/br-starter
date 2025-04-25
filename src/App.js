@@ -67,7 +67,7 @@ function App(){
 //     });
 // });
 
-var location=useLocation();
+// var location=useLocation();
   useEffect(()=>{
     ReactGa.initialize("UA-192985470-1");
 
